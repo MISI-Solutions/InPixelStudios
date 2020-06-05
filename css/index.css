@@ -1,30 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Kadwa&family=KoHo:wght@300;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* HEADER */
 header {
     width: 100%;
-    height: 60em;
+    height: 50em;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     linear-gradient(360deg, rgba(112, 111, 211, 0.4) 0%, rgba(255, 255, 255, 0) 100%),
     linear-gradient(180deg, rgba(126, 214, 223, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url(../media/header-background.jpg) center no-repeat;
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 4px #7ED6DF solid;
+    position: relative;
 }
 
 nav {
+    width: 100%;
+    height: 4em;
     display: flex;
     justify-content: space-between;
     background: rgba(54, 54, 85, 0.4);
     backdrop-filter: blur(8px);
 }
 
-nav img {
-    padding: 1em 1em 1em 5%;
+nav .logo {
+    padding-left: 10%;
+    align-self: center;
 }
 
 nav ul {
@@ -34,11 +45,272 @@ nav ul {
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    background: red;
 }
 
 nav ul li {
-    background: rgba(0, 0, 0, 0.15);
     height: 100%;
+    width: 16.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
 
+nav ul li:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+nav ul li a {
+    color: white;
+    font-family: "KoHo", sans-serif;
+}
+
+nav ul li.active {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+nav ul li.active a {
+    font-weight: 600;
+}
+
+header h1 {
+    font-family: "Jomhuria", sans-serif;
+    font-size: 7.5em;
+    color: white;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+header h2 {
+    font-family: "Kadwa", serif;
+    font-size: 1.25em;
+    line-height: 142.28%;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    text-align: center;
+    margin-top: -12em;
+}
+
+.page-divider {
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    margin-left: -43px;
+}
+
+/* ABOUT US */
+#about-us {
+    border-top: 35px #55AAB2 solid;
+    border-bottom: 4px #7ED6DF solid;
+    width: 100%;
+    height: 70em;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+}
+
+#about-us img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.top-column, .bottom-column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: #E8E8E8;
+    border-radius: 20px;
+    width: 692px;
+    height: 323px;
+    padding: 1em 1em 1em 2em;
+    margin: 0 10em;
+}
+
+h3 {
+    font-family: "KoHo", sans-serif;
+    font-size: 3.125em;
+    color: #353B48;
+}
+
+.box .line-short {
+    width: 126px;
+    height: 5px;
+    background: #55AAB2;
+    margin: 0.5em 0;
+}
+
+.box p {
+    font-family: "Kadwa", serif;
+    font-size: 1.25em;
+    color: #353B48;
+}
+
+.box p span {
+    color: #55AAB2;
+}
+
+.bottom-column .box {
+    height: 337px;
+    width: 733px;
+    text-align: right;
+}
+
+.bottom-column .box .line-short {
+    margin-left: auto;
+}
+
+/* MINECRAFT PARTNER */
+#minecraft-partner {
+    width: 100%;
+    height: 270px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/minecraft-partner-background.png);
+    box-shadow: inset 0px 6px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#minecraft-partner img {
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.4));
+}
+
+#minecraft-partner p {
+    color: white;
+    font-family: "KoHo", sans-serif;
+    font-size: 1.875em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* FEATURED WORK */
+#featured-work {
+    width: 100%;
+    height: 60em;
+    text-align: center;
+    padding: 3em 0;
+}
+
+#featured-work h3 {
+    margin-bottom: 1em;
+}
+
+#featured-work .current-image {
+    width: 1018px;
+    height: 572px;
+    position: relative;
+    margin: auto;
+    transition: 0.6s;
+}
+
+.img1 {
+    background: url('../media/marketplace-01.png') no-repeat center;
+    background-size: cover;
+}
+
+.img2 {
+    background: url('../media/marketplace-02.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.img3 {
+    background: url('../media/marketplace-03.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.img4 {
+    background: url('../media/marketplace-04.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.img5 {
+    background: url('../media/header-background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#featured-work .arrow-left, #featured-work .arrow-right{
+    position: absolute;
+    left: 0.5em;
+    top: 50%;
+    margin-top: -55px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+#featured-work .arrow-left:hover, #featured-work .arrow-right:hover {
+    background: black;
+}
+
+#featured-work .arrow-right {
+    left: unset;
+    right: 0.5em;
+}
+
+#featured-work .image-gallery img {
+    margin: 1em 4.3px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+#featured-work .image-gallery img:hover {
+    opacity: 0.8;
+}
+
+#featured-work .image-gallery img.active {
+    opacity: 1;
+}
+
+#featured-work .button {
+    width: 295px;
+    height: 75px;
+    background: #55AAB2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em auto;
+    transition: 0.6s;
+}
+
+#featured-work .button:hover {
+    background: #357b81;
+}
+
+#featured-work .button p {
+    font-family: "KoHo", sans-serif;
+    font-size: 1.875em;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 5em;
+    width: 100%;
+    height: 150px;
+    background: #55AAB2;
+    border-top: 15px #7ED6DF solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+footer p, footer h4 {
+    color: white;
+    font-family: "KoHo", sans-serif;
+    font-size: 1.25em;
+    width: 100%;
+    text-align: center;
+}
+
+footer h4 {
+    color: #D8D8D8;
+}
+
+footer img {
+    margin: 0.2em 1em;
 }
