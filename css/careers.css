@@ -27,7 +27,7 @@ header {
 
 .box {
     width: 700px;
-    height: 500px;
+    height: 600px;
     background: white;
     border-left: 10px #55AAB2 solid;
     border-radius: 5px;
@@ -54,7 +54,7 @@ header {
 }
 
 .box div {
-    margin-top: 0.5em;
+    margin-top: 0.75em;
 }
 
 .box div:first-of-type {
