@@ -2,7 +2,39 @@ const arrowLeft = document.querySelector(".arrow-left");
 const arrowRight = document.querySelector(".arrow-right");
 const currentImage = document.querySelector(".current-image");
 const images = document.querySelectorAll(".image");
+
+const img1 = document.querySelector(".image1");
+const img2 = document.querySelector(".image2");
+const img3 = document.querySelector(".image3");
+const img4 = document.querySelector(".image4");
+const img5 = document.querySelector(".image5");
+
 let currentImageId = 1;
+
+img1.addEventListener("click", function() {
+    currentImageId = 1;
+    refresh();
+});
+
+img2.addEventListener("click", function() {
+    currentImageId = 2;
+    refresh();
+});
+
+img3.addEventListener("click", function() {
+    currentImageId = 3;
+    refresh();
+});
+
+img4.addEventListener("click", function() {
+    currentImageId = 4;
+    refresh();
+});
+
+img5.addEventListener("click", function() {
+    currentImageId = 5;
+    refresh();
+});
 
 arrowLeft.addEventListener("click", function() {
    if(currentImageId === 1) {
