@@ -1,0 +1,150 @@
+/* HEADER */
+header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    linear-gradient(360deg, rgba(112, 111, 211, 0.4) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(180deg, rgba(126, 214, 223, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url(../media/marketplace-04.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/* OPEN POSITIONS */
+#positions {
+    width: 100%;
+    border-top: 35px #55AAB2 solid;
+}
+
+#positions h3 {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.positions-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 8em;
+    grid-row-gap: 4em;
+    justify-content: center;
+}
+
+.box {
+    width: 700px;
+    height: 500px;
+    background: white;
+    border-left: 10px #55AAB2 solid;
+    border-radius: 5px;
+    padding: 1.5em 0 0 2em;
+}
+
+.box h4 {
+    color: #353B48;
+    font-family: "Kadwa", serif;
+    font-size: 1.875em;
+}
+
+.box h5 {
+    color: #6C6D71;
+    font-family: "Kadwa", serif;
+    font-size: 1.25em;
+}
+
+.box p {
+    color: #6C6D71;
+    font-family: "Kadwa", serif;
+    font-size: 0.9375em;
+    line-height: 1.5em;
+}
+
+.box div {
+    margin-top: 0.5em;
+}
+
+.box div:first-of-type {
+    margin: 0;
+}
+
+.responsibilities, .qualifications, .payment, .contract {
+    display: flex;
+    align-items: center;
+}
+
+.responsibilities img, .qualifications img, .payment img, .contract img {
+    margin-right: 0.75em;
+}
+
+/* CONTACT US */
+#contact {
+    width: 100%;
+    margin: 4em 0 10em;
+}
+
+#contact h3 {
+    text-align: center;
+}
+
+.contactform {
+    width: 800px;
+    height: 600px;
+    margin: 2em auto;
+}
+
+.contactform input, .contactform textarea {
+    width: 100%;
+    outline: none;
+    border: 1px #6C6D71 solid;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    color: black;
+    font-family: "Kadwa", serif;
+    font-size: 1.25em;
+    background: none;
+    transition: 0.6s;
+}
+
+.contactform input:hover, .contactform textarea:hover {
+    background: white;
+}
+
+.contactform textarea {
+    height: 200px;
+    padding-top: 1em;
+    resize: none;
+}
+
+.contactform .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactform .row input {
+    width: 45%;
+    height: 4em;
+}
+
+.contactform .submit {
+    height: 3em;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+::placeholder {
+    color: #6C6D71;
+}
+
+.discord {
+    text-align: center;
+}
+
+.discord img {
+    opacity: 0.75;
+    transition: 0.6s;
+}
+
+.discord img:hover {
+    opacity: 1;
+}
+
+.discord p {
+    font-family: "Kadwa", serif;
+    font-size: 1.25em;
+    color: #6C6D71;
+}
