@@ -65,7 +65,8 @@ header {
 
 .box {
     height: 653px;
-    width: 557px;
+    width: 30vw;
+    max-width: 557px;
     background: #EDEDED;
     position: relative;
     text-align: left;

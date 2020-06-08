@@ -164,7 +164,6 @@ h3 {
 #featured-work .image-gallery img {
     margin: 1em 4.3px;
     opacity: 0.5;
-    cursor: pointer;
     transition: 0.6s;
 }
 
