@@ -10,6 +10,7 @@ header {
 #positions {
     width: 100%;
     border-top: 35px #55AAB2 solid;
+    padding: 0 3em;
 }
 
 #positions h3 {
